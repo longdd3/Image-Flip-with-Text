@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<div class="area" >
+    <ul class="circles">
+        <div class ="text">
+        <h2>Image Flip with Text</h2>
+        </div>
+
+  <div class="flip-box">
+   <div class= "rl"> 
+    <i class="fa fa-arrow-circle-left ad" style="font-size:60px "></i>
+
+</p> </div>
+     <div class="flip-box-inner">
+     <div class="flip-box-front">
+         <img  src = "1.jpg" id ="output" style=" width:400px; height:600px" class ="image--Preview__image">
+
+       </div>
+    <div class="flip-box-back">
+       <img  src = "1.jpg" id ="output" style=" width:400px; height:600px" class ="image--Preview__image">
+    </div>
+    </div>
+</div>
+
+
+
+<div class="flip-box2">
+    <div class= "rl2"> 
+     <i class="fa fa-arrow-circle-up as" style="font-size:60px "></i>
+ 
+ </p> </div>
+      <div class="flip-box-inner2">
+      <div class="flip-box-front2">
+          <img  src = "1.jpg" id ="output2" style=" width:400px; height:600px" class ="image--Preview__image">
+ 
+        </div>
+     <div class="flip-box-back2">
+        <img  src = "1.jpg" id ="output2" style=" width:400px; height:600px" class ="image--Preview__image">
+     </div>
+     </div>
+ </div>
+ 
+
+
+
+
+
+
+
+
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<div class = "button">
+<p><label class = "change" for="file" style="cursor: pointer;">
+    
+    Upload Image</label></p>
+</div>
+<script>
+    var loadFile = function(event) {
+    var image = document.getElementById('output');
+    var image2 = document.getElementById('output2');
+    image.src = URL.createObjectURL(event.target.files[0]);
+    image2.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script>
+
+
+   
+
+    <div class="context">
+        <h1></h1>
+    </div>
+
+
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+    </div>
+    
+</body>
+</html>
